@@ -1,41 +1,47 @@
 variable "name" {
-  description = ""
-  type        = ""
-  default     = ""
+  description = "Name of resource"
+  type        = string
+  default     = null
 }
 
 variable "environment" {
-  description = ""
-  type        = ""
-  default     = ""
+  description = "Environment"
+  type        = string
+  default     = null
 }
 
 variable "managed_by" {
-  description = ""
-  type        = ""
-  default     = ""
+  description = "Maneged by..."
+  type        = string
+  default     = "terraform"
 }
 
 variable "owner" {
-  description = ""
-  type        = ""
-  default     = ""
+  description = "Owner of resource"
+  type        = string
+  default     = null
 }
 
-variable "appication" {
-  description = ""
-  type        = ""
-  default     = ""
+variable "application" {
+  description = "Name off application."
+  type        = string
+  default     = null
 }
 
 variable "organization" {
-  description = ""
-  type        = ""
-  default     = ""
+  description = "organization name."
+  type        = string
+  default     = null
 }
 
 variable "team" {
-  description = ""
-  type        = ""
-  default     = ""
+  description = "Name of  owrk team."
+  type        = string
+  default     = null
+}
+
+variable "tags" {
+  description = "Additional tags."
+  type        = map(string)
+  default     = {}
 }
